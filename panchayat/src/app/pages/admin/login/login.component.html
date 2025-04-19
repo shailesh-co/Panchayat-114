@@ -1,0 +1,19 @@
+<div class="container d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+    <h3 class="text-danger fw-bold border-bottom pb-1">Panchayat Login</h3>
+    
+    <div class="bg-light p-4 rounded shadow-sm mt-4" style="min-width: 600px;">
+      <h5 class="text-center mb-4 fw-bold">Admin Login</h5>
+      <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+        <div class="mb-3">
+          <input type="email" class="form-control" formControlName="email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" formControlName="password" placeholder="Password">
+        </div>
+        <button class="btn w-100 text-white" style="background-color: #a42727;" [disabled]="loginForm.invalid">Login</button>
+      </form>
+      <div *ngIf="loginFailed" class="text-danger mt-3 text-center">Invalid credentials</div>
+    </div>
+  </div>
+  
+  <app-footer></app-footer>

@@ -74,23 +74,23 @@
     <div class="row text-center justify-content-center mt-4">
       <!-- Officer 1 -->
       <div class="col-md-4 mb-4 officer-card">
-        <img src="https://via.placeholder.com/160" alt="Officer 1">
-        <div class="officer-name">डॉ. अमिता अजित पवार</div>
-        <div class="officer-title">गट विकास अधिकारी (BDO), प. स., बुलढाणा</div>
+        <img src="../../../assets/images/staff/shinde--sir.jpeg" alt="Officer 2">
+        <div class="officer-name">Shree. B.A.rathod </div>
+        <div class="officer-title">सहाय्यक गटविकास अधिकारी, पं. स. </div>
       </div>
 
       <!-- Officer 2 -->
       <div class="col-md-4 mb-4 officer-card">
-        <img src="https://via.placeholder.com/160" alt="Officer 2">
-        <div class="officer-name">श्री. लक्ष्मण पांडुरंग सुरडकर</div>
-        <div class="officer-title">सहाय्यक गट विकास अधिकारी, प. स., बुलढाणा</div>
+        <img src="../../../assets/images/staff/shinde--sir.jpeg" alt="Officer 2">
+        <div class="officer-name">Shree. B.A.rathod </div>
+        <div class="officer-title">सहाय्यक गटविकास अधिकारी, पं. स. </div>
       </div>
 
       <!-- Officer 3 -->
       <div class="col-md-4 mb-4 officer-card">
-        <img src="https://via.placeholder.com/160" alt="Officer 3">
-        <div class="officer-name">श्रीमती. मोहिनी प्रल्हाद खंदारे</div>
-        <div class="officer-title">गटशिक्षणाधिकारी, प. स. बुलढाणा</div>
+        <img src="../../../assets/images/staff/kondikar-sir.jpeg" alt="Officer 3">
+        <div class="officer-name">Shree.s.m.kondekar</div>
+        <div class="officer-title"> गटशिक्षणाधिकारी, पं. स.</div>
       </div>
     </div>
   </div>
@@ -352,6 +352,24 @@
         </div>
       </div>
   </div>
+  <div class="container my-5">
+    <h2 class="text-center mb-4" style="color: #800000;">पंचायत समिति वाशी गॅलरी</h2>
+    <hr style="border-top: 2px solid #800000; width: 90%; margin: 0 auto 30px auto;">
+  
+    <div class="row g-4 justify-content-center">
+      <div 
+        class="col-12 col-sm-6 col-md-4 col-lg-3"
+        *ngFor="let image of images"
+        (click)="navigateToGallery()"
+        style="cursor: pointer;"
+      >
+        <div class="card shadow-sm h-100">
+          <img [src]="image.url" class="card-img-top" alt="Gallery Image">
+        </div>
+      </div>
+    </div>
+  </div>
+  
   
 
 <app-footer></app-footer>

@@ -22,11 +22,12 @@ const routes: Routes = [
   { path: 'officers', component: OfficersComponent },
   { path: 'reports', component: ReportsComponent },
   { path: 'login', component: LoginComponent },
+  { path: '**' , component : HomeComponent},
   { path: 'admin/dashboard', component: DashboardComponent, canActivate: [AdminAuthGuard] },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash:true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
